@@ -1,0 +1,399 @@
+$iconColor:#bbbbbb;
+$InputBackColor: #202123;
+$bColor:#000000;
+$buttonsColor:#f8be1a;
+$trashColor:#f45151;
+$inputColor:#4d4f54;
+$myFontSize:23px;
+$white:white;
+$socialColor:#f8fafb;
+
+
+
+
+.search_input{
+    width: 80%;
+    border: 1px hidden $inputColor !important;
+    border-radius: 20px !important;
+    position: relative;
+    color: $iconColor !important;
+    background-color: $inputColor !important;
+    
+}
+.flag{
+    height: 30px;
+    width: 30px;
+    border:1px solid beige;
+    border-radius: 100%;
+}
+
+.fa-telegram-plane{
+    color:$buttonsColor; 
+    font-size :20px;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+}
+.head{
+    display: flex;
+
+    align-items: center !important;
+    background-color: $bColor;
+}
+.natinality{
+    @extend .head;
+}
+.fa-search{
+    color:$iconColor;
+    position: absolute;
+    right: 30px;
+    top:10px;
+    
+}
+.logo_img{
+    height: 40px;
+    width: 40px;
+}
+.nationality{
+    span{
+        color: $white;
+    }
+    .fa-ruble-sign{
+        color: $white;
+        font-size: 12px
+    }
+    .fa-angle-down{
+        color: $white;
+    }
+}
+.profil_img{
+    width: 40px;
+    height: 40px;
+    border:1px hidden black;
+    border-radius :100%;
+
+}
+.products{
+    border:1px hidden black;
+    border-radius:10px;
+}
+.fa-shopping-cart{
+    color:$white;
+    font-size: 25px;
+}
+.prof_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card2{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border:1px hidden black;
+    top:0;
+    border-radius:100%;
+    right:0;
+    z-index: 2;
+    background-color: #f8be1a;
+}
+.card3{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border:1px hidden black;
+    top:0;
+    border-radius:100%;
+    right:-6px;
+    z-index: 2;
+    background-color: #f8be1a;
+    span{
+        font-size: 10px;
+        @extend .prof_info;
+        font-weight: bold;
+    }
+}
+.left_asaid{
+    width: auto;
+    position: relative;
+    text-align: center;
+    background-color: $bColor;
+    height: auto;
+}  
+    
+
+.left_menu{
+    display: flex;
+    flex-direction: column;
+   list-style-type: none;
+   padding: 0px;
+   width: auto;
+   i{
+    font-size: $myFontSize !important;
+    color:$white;
+
+   }
+   li{
+    display: flex;
+    flex-direction: column;
+       padding-top: 25px;
+       padding:25px 10px 0px 10px;
+   }
+   span{
+       font-size: 15px;
+       text-align: center;
+       margin-top: 5px;
+       color:$white;
+   }
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit{
+    height: auto;
+    width: 150px;
+    text-align: center;
+    border:1px hidden black;
+    border-radius: 20px;
+    background-color: $buttonsColor;
+   @extend .center;
+}
+.delete{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    background-color: $trashColor;
+    @extend .center;
+    i{
+        color: $white;
+        font-size: 19px;
+    }
+}
+.raiting{
+    margin-top: 20px;
+    
+    i{
+        font-size: 13px;
+        color: $buttonsColor;
+    }
+}
+.person_info{
+    border-radius: 10px !important;
+    img{
+        width: 270px;
+        height: 306px;
+        border:1px hidden black;
+        border-radius:40px;
+    }
+}
+.location{
+    @extend .center;
+    margin-top: 20px;
+    span{
+        font-size: 15px;
+        
+    }
+    i{
+        font-size: 14px;
+        color:#add9a3;
+    }
+}
+.statistic{
+    @extend .center;
+    h5{
+        margin: 0px;
+    }
+    p{
+        font-size: 14px;
+        margin: 0px;
+    }
+    i{
+        margin-right: 5px;
+        font-size: 40px;
+    }
+    div{
+        margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    @extend .center ;
+    }
+    .st_info{
+        display: flex;
+    flex-direction: column;
+    }
+}
+.fa-wallet{
+    font-size: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    div{
+        background-color:$buttonsColor;
+        margin-left: 16px;
+        height: 40px;
+        width: 40px;
+        border:1px hidden black;
+        border-radius: 100%;
+        @extend .center;
+
+    }
+    i{
+        font-size: 20px;
+        color: $white;
+    }
+}
+.adress{
+    border:1px hidden red;
+    border-radius: 10px;
+}
+.adress_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    i{
+        font-size: $myFontSize;
+    }
+}
+.adress_info{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+    li{
+        margin-top: 15px;
+        display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    }
+    .value{
+        color: black;
+    }
+    .key{
+        color:$iconColor;
+    }
+}
+.pr_info{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    .cost{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       height: auto;
+    }
+}
+.cost{
+    height: auto;
+    display: flex;
+    align-items: center !important;
+    flex-direction: row;
+    .raiting{
+        margin-left: 20px;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    i{
+        font-size: 12px;
+    }
+}
+.pr_item{
+    p{
+        margin: 2px;
+    }
+}
+.payments{
+    border:1px hidden black;
+    border-radius: 10px;
+}
+.visible{
+    z-index: 3;
+    position: fixed !important;
+    display: block !important;
+}
+.del:hover{
+    cursor: pointer !important;
+
+}
+.del{
+    display: none;
+    position: absolute;
+    top:0px;
+    color: white;
+    font-size: 30px;
+    right: 10px;
+}
+#hidden-menu:hover{
+    cursor: pointer !important;
+
+}
+#hidden-menu{
+    display: none ;
+}
+
+@media only screen and (max-width: 486px) {
+    .left_asaid{
+        display: none;
+    }
+    #hidden-menu{
+        display: block;
+    }
+    .del{
+        display: block;
+
+    }
+    .edit{
+        width: 90px;
+        span{
+            font-size: 12px;
+        }
+    }
+    .delete{
+        width: 30px;
+        height: 30px;
+        margin:5px;
+        i{
+            font-size: 15px;
+        }
+    }
+    .statistic{
+        i{
+            font-size: 28px;
+        }
+        h2{
+            font-size: 15px;
+
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .adress_header{
+        h3{
+            font-size: 16px;
+        }
+    }
+    .payments{
+        margin-top:6px;
+    }
+    .adress{
+        margin-top:6px;
+    }
+    .location{
+        margin-top:10px !important;
+        margin-bottom: 10px !important;
+    }
+    
+  }
